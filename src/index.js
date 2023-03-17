@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  return res.json("Api está ok");
+  return res.json("Te amo Lucimary S2");
 });
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
