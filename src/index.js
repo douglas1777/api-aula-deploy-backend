@@ -9,6 +9,6 @@ app.get("/", async (req, res) => {
   return res.json("Api está ok");
 });
 const port = process.env.PORT || 3000;
-app.listen(process.env.PORT, () => {
-  console.log(`Servidor rodando na porta ${process.env.PORT}`);
+app.listen(port, () => {
+  console.log(`Servidor rodando na porta ${port}`);
 });
