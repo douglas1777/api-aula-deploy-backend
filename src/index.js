@@ -11,9 +11,9 @@ app.get("/", async (req, res) => {
     const carros = await knex("carros");
     return res.status(200).json(carros);
   } catch (error) {
+    console.log(error);
     return res.status(500).json({ mensagem: "Erro do servidor" });
   }
-  return res.json("Api deployada ");
 });
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
